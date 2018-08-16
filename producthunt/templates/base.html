@@ -1,0 +1,79 @@
+{% load static %}
+{% comment %} {% load staticfiles%} {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Hunt  </title>
+
+
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-grid.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-reboot.min.css.map' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-reboot.css' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-reboot.css.map' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-grid.css.map' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-grid.min.css.map' %}" rel="stylesheet">
+     <link href="{% static 'css/bootstrap-select.min.css' %}" rel="stylesheet">
+     <link href="{% static 'css/main.css' %}" rel="stylesheet">
+     <link href="{% static 'slider.css' %}" rel="stylesheet">
+
+
+
+    <script href="{% static ' main.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/bootstrap.min.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/bootstrap-select.min.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/jquery.min.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/bootstrap.bundle.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/bootstrap.bundle.min.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/bootstrap.js' %}" rel="stylesheet"></script>
+    <script href="{% static 'js/goolgemap.js' %}" rel="stylesheet"></script>
+    
+
+     {% block js %}{% endblock %}
+
+     
+</head>
+<body>
+
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    
+                    <a class="nav-link" href="">Fblink</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Registration</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+          </nav>
+        </div>
+        <br>
+      
+     <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
